@@ -390,6 +390,16 @@ h2 {
     transform: translateY(-5px);
 }
 
+.feature2:hover {
+    background-color: rgb(226,181,28);
+    transform: translateY(-5px);
+}
+
+.feature3:hover {
+ 
+    transform: translateY(-5px);
+}
+
 .feature-icon {
     width: 70px;
     height: 70px;
