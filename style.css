@@ -22,7 +22,27 @@ body {
  }
 
 
+ .rounded-image-container {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+}
 
+.rounded-image {
+    width: 150px; /* Set a width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+    animation: heartbeat 1s infinite; /* Apply the heartbeat animation */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 110% */
+    }
+}
 
 
 

@@ -225,3 +225,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all sections with the flip effect
+    var flipSections = document.querySelectorAll('.flip-section');
+
+    window.addEventListener('scroll', function() {
+        flipSections.forEach(function(section) {
+            // Get the position of the section relative to the viewport
+            var rect = section.getBoundingClientRect();
+
+            // Apply the flip effect when the section enters the viewport
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                section.querySelector('.flip-content').classList.add('flip');
+            } else {
+                section.querySelector('.flip-content').classList.remove('flip');
+            }
+        });
+    });
+});
